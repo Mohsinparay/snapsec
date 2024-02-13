@@ -44,14 +44,14 @@ body{
       
     }
 
-	 .desktop-nav{
+  .desktop-nav .container-fluid .logo{
         display: flex;
        
         /* position:absolute; */
-        margin-left: -150px;
+        margin-left: 0px;
 
     
-    }    
+    }
     .links{
     margin-left: 0;
     
