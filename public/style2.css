@@ -43,6 +43,15 @@ body{
     
       
     }
+
+	 .desktop-nav{
+        display: flex;
+       
+        /* position:absolute; */
+        margin-left: -150px;
+
+    
+    }    
     .links{
     margin-left: 0;
     
