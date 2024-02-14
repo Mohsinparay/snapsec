@@ -63,6 +63,9 @@ body{
         .main-manu{
             margin-left: 0px !important;
         }
+	       #main{
+        font-size: 30px;
+    }
     }
 .main-manu{
     margin-left: 210px;
