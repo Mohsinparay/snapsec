@@ -3137,3 +3137,29 @@ footer{
         transform: translateX(-100px);
     }
 } */
+
+
+@media (max-width: 700px) {
+    .contact-card {
+        width: 90%; /* Adjusted width for smaller screens */
+        height: auto; /* Adjusted height for smaller screens */
+        padding: 20px; /* Adjusted padding for smaller screens */
+        border-radius: 10px; /* Adjusted border radius for smaller screens */
+    }
+
+    .contact-card label input,
+    .contact-card label textarea {
+        width: 200%; /* Adjusted width for smaller screens */
+        max-width: 100%; /* Ensures input fields do not exceed container width */
+    }
+
+    .contact-card .contact-btns {
+        justify-content: center; /* Center align buttons for smaller screens */
+        margin-top: 20px; /* Adjusted margin for smaller screens */
+    }
+
+    .contact-card .contact-btns button {
+        padding: 0px 20px; /* Adjusted padding for smaller screens */
+        height: 40px; /* Adjusted height for smaller screens */
+    }
+}
