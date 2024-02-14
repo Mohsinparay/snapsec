@@ -3162,4 +3162,7 @@ footer{
         padding: 0px 20px; /* Adjusted padding for smaller screens */
         height: 40px; /* Adjusted height for smaller screens */
     }
+	  #con-text{
+        font-size: 30px;
+    }
 }
