@@ -3149,8 +3149,7 @@ footer{
 
     .contact-card label input,
     .contact-card label textarea {
-        width: 200%; /* Adjusted width for smaller screens */
-        max-width: 100%; /* Ensures input fields do not exceed container width */
+      width: 300px;
     }
 
     .contact-card .contact-btns {
