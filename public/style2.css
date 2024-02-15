@@ -43,6 +43,11 @@ body{
     
       
     }
+    #expert-btn{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
 
   .desktop-nav .container-fluid .logo{
         display: flex;
@@ -1949,7 +1954,7 @@ body{
     position: relative;
     margin: 56px auto;
     width: 944px;
-    height: 261px;
+    height: aut;
     border-radius: 16px;
     background: linear-gradient(270deg, #180846 0%, #131157 100%);
     z-index: 1;
@@ -1992,6 +1997,10 @@ body{
     backdrop-filter: blur(2px);
     cursor: pointer;
 }
+.schudule-card .btn {
+    display: block; /* Change display to block */
+    margin: 20px auto; /* Center the button horizontally */
+}
 .schudule-card .btn .text{
     color: #FFF;
     font-family: Plus Jakarta Sans;
@@ -2013,33 +2022,25 @@ body{
 
 @media (max-width: 700px) {
     .schudule-card {
-        width: 90%; /* Adjusted width for smaller screens */
-        height: auto; /* Adjusted height for smaller screens */
-        margin: 20px auto; /* Adjusted margin for smaller screens */
-        border-radius: 10px; /* Adjusted border radius for smaller screens */
+        width: 90%;
+        max-width: 400px; 
+        margin: 56px auto; 
     }
 
     .schudule-card .schudule-text {
-        width: 100%; /* Adjusted width for smaller screens */
-        padding: 20px; /* Adjusted padding for smaller screens */
-        font-size: 24px; /* Adjusted font size for smaller screens */
-    }
-
-    .schudule-card .btn {
-        width: 150px; /* Adjusted width for smaller screens */
-        height: 40px; /* Adjusted height for smaller screens */
-        margin: 20px auto; /* Adjusted margin for smaller screens */
-    }
-
-    .schudule-card .btn .text {
-        font-size: 14px; /* Adjusted font size for smaller screens */
-        margin: 8px 0; /* Adjusted margin for smaller screens */
+        width: 90%; /* Adjusted width for smaller screens */
+        padding: 30px; /* Adjusted padding for smaller screens */
     }
 
     .schudule-card .bg-img {
         width: 100%; /* Adjusted width for smaller screens */
-        height: auto; /* Adjusted height for smaller screens */
-        margin: 20px 0; /* Adjusted margin for smaller screens */
+        height: auto; /* Auto height to maintain aspect ratio */
+        margin-top: 20px; /* Adjusted margin for smaller screens */
+    }
+
+    .schudule-card .btn {
+        display: block; /* Change display to block */
+        margin: 20px auto; /* Center the button horizontally */
     }
 }
 
@@ -2086,6 +2087,48 @@ body{
     position: relative;
     z-index: 1;
 }
+@media (max-width: 700px) {
+    .comming-soon {
+        flex-wrap: wrap; /* Allow items to wrap to new line */
+        justify-content: center; /* Center align items horizontally */
+        gap: 20px; /* Adjusted gap between items */
+        overflow-x: auto; /* Enable horizontal scrolling if needed */
+        padding: 0 20px; /* Add padding to prevent overflow issues */
+    }
+
+    .comming-soon .comming-soon-text {
+        flex: 0 0 auto; /* Allow items to shrink and grow */
+        text-align: center; /* Center align text */
+    }
+
+    .subscribe {
+        width: 80%; /* Adjusted width for smaller screens */
+        max-width: 350px; /* Limit max width for larger screens */
+        margin: 40px auto; /* Center align and adjust margin */
+    }
+
+    .subscribe div p {
+        text-align: center; /* Center align text */
+    }
+
+    .subscribe .subscribe-input {
+        flex-direction: column; /* Stack input and button vertically */
+        align-items: center; /* Center align items horizontally */
+        margin-top: 20px; /* Adjusted margin for smaller screens */
+        gap: 8px; /* Adjusted gap between input and button */
+    }
+
+    .subscribe .subscribe-input input {
+        width: 100%; /* Adjusted width for smaller screens */
+        max-width: 100%; /* Limit max width for larger screens */
+    }
+
+    .subscribe .subscribe-input button {
+        width: 100%; /* Adjusted width for smaller screens */
+        margin-top: 10px; /* Adjusted margin for smaller screens */
+    }
+}
+
 
 .subscribe{
     margin: 40px auto;
@@ -2169,6 +2212,11 @@ body{
 .subscribe .subscribe-input button:hover::before {
     opacity: 1;
 }
+
+@media (max-width: 700px) {
+   
+}
+
 
 
 /* Footer */
@@ -3034,6 +3082,10 @@ footer .footer-logo-section .text{
     animation: fadeIn 2000ms forwards;
     opacity: 0;
     animation-delay: 500ms;
+    
+}
+#desc{
+    padding: 15px;
 }
 
 .hero-container .mid-Btn .tutorial-btn{
@@ -3137,8 +3189,6 @@ footer{
         transform: translateX(-100px);
     }
 } */
-
-
 @media (max-width: 700px) {
     .contact-card {
         width: 90%; /* Adjusted width for smaller screens */
@@ -3149,9 +3199,8 @@ footer{
 
     .contact-card label input,
     .contact-card label textarea {
-      width: 300px;
+       width: 300px;
     }
-
     .contact-card .contact-btns {
         justify-content: center; /* Center align buttons for smaller screens */
         margin-top: 20px; /* Adjusted margin for smaller screens */
@@ -3161,7 +3210,10 @@ footer{
         padding: 0px 20px; /* Adjusted padding for smaller screens */
         height: 40px; /* Adjusted height for smaller screens */
     }
-	  #con-text{
+    #con-text{
         font-size: 30px;
+    }
+    .btn-contact{
+        margin-left: 200px;
     }
 }
