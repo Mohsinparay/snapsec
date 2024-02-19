@@ -910,12 +910,18 @@ body{
 
 /* Index page background images */
 
-.hero-container .wave-svg{
+.hero-container .wave-svg {
     position: absolute;
     width: auto;
     top: 414px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media (max-width: 700px) {
+    .hero-container .wave-svg {
+      display: none;
+    }
 }
 
 
@@ -1045,6 +1051,21 @@ body{
     top:3579px;
     left:1039px;
 }
+@media (max-width: 700px) {
+    .eclips1,
+    .eclips2,
+    .eclips3,
+    .eclips4,
+    .eclips5,
+    .eclips6,
+    .eclips7,
+    .eclips8,
+    .eclips9,
+    .eclips10 {
+      display: none;
+    }
+}
+
 
 .square{
     position: relative;
@@ -1498,6 +1519,55 @@ body{
     text-align:center;
     margin: 75px 0px;
 }
+@media (max-width: 700px) {
+    .services .sevices-heading {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .services .services-smallText {
+        font-size: 12px;
+    }
+
+    .services .service-card,
+    .services .service-card2 {
+        width: 90%;
+        max-width: none;
+        margin: 20px auto; /* Center the cards */
+    }
+
+    .services .service-card::before,
+    .services .service-card2::before {
+        border-radius: 40px;
+    }
+
+    .services .service-card .image,
+    .services .service-card2 .image {
+        width: 100%;
+        max-width: none;
+        margin: 20px auto; /* Center the images */
+    }
+
+    .services .service-card .text,
+    .services .service-card2 .text {
+        margin: 20px 0;
+        text-align: center; /* Center the text */
+    }
+
+    .services .service-card .text .card-text,
+    .services .service-card2 .card-text {
+        max-width: 100%; /* Prevent text overflow */
+    }
+
+    .services .btn {
+        margin-top: 20px;
+    }
+
+    .services .btn span {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
 
 .company-heading-div{
     text-align: center;
@@ -1949,7 +2019,6 @@ body{
     line-height: normal;
     margin: 14px 19px;
 }
-
 .product-new-outer {
     display: flex;
     margin: 32px auto;
@@ -2333,14 +2402,7 @@ footer .footer-logo-section .text{
     line-height: normal;
 }
 
-@media screen and (min-width: 1400px) {
-    .hero-container .wave-svg img{
-        position: absolute;
-        width: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
+
 
 
 
@@ -2361,8 +2423,8 @@ footer .footer-logo-section .text{
    
 
     footer .footer-logo-section .name-logo .image {
-        width: 100%; /* Adjusted width for smaller screens */
-        height: auto; /* Adjusted height for smaller screens */
+        width:105px; /* Adjusted width for smaller screens */
+        height: 105px; /* Adjusted height for smaller screens */
     }
 
     footer .footer-logo-section .text {
@@ -2873,21 +2935,97 @@ footer .footer-logo-section .text{
     opacity: 0.7;
 }
 
-
-.youtube-video{
-    width: 944px;
-    height: 508px;
+.youtube-video {
+    width: 100%; /* Take full width of the container */
+    max-width: 944px; /* Limit maximum width */
+    height: 500px; /* Allow height to adjust proportionally */
     background: rgba(0, 0, 0, 0.20);
     backdrop-filter: blur(1px);
-    margin:32px auto;
+    margin: 32px auto;
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.youtube-video iframe {
+    width: 100%; /* Take full width of the container */
+    height: 100%; /* Take full height of the container */
+    border-radius: 20px;
     position: relative;
     z-index: 1;
 }
 
-.youtube-video iframe{
-    border-radius: 20px;
-    position: relative;
-    z-index: 1;
+@media (max-width: 700px) {
+    .youtube-video {
+        width:550px; /* Adjust width for smaller screens with margin */
+        max-width: none; /* Remove maximum width limit */
+        height: 550px; /* Allow height to adjust proportionally */
+        margin: 16px auto; /* Adjust margin for smaller screens */
+    }
+}
+
+
+@media (max-width: 700px) {
+    .product {
+        margin: 32px 10px 0px 10px; /* Adjusted margin for smaller screens */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Allow cards to wrap to next line */
+        gap: 21px;
+    }
+
+    .product .side-cards .product-card1,
+    .product .side-cards .product-card2 {
+        height: auto; /* Allow height to adjust based on content */
+        padding: 20px; /* Add padding for spacing */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+        text-align: center; /* Center text */
+    }
+
+    .product .side-cards .product-card1 img,
+    .product .side-cards .product-card2 img {
+        margin-left: -10px; /* Center the image horizontally */
+        width: 100%; /* Adjust image width */
+    }
+
+    .product .side-cards .product-card1 h3,
+    .product .side-cards .product-card2 h3 {
+        margin: 10px 0 5px; /* Adjust margin */
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .product .side-cards .product-card1 p,
+    .product .side-cards .product-card2 p {
+        width: 100%; /* Adjust width to full */
+        margin: 5px 0; /* Adjust margin */
+    }
+    .product .product-card3 img{
+        margin-left: -20px;
+    }
+
+    .product .product-card3 {
+        width: 100%; /* Full width for smaller screens */
+        padding: 0px 20px 33px 20px; /* Adjusted padding for smaller screens */
+    }
+
+    .product .side-cards .product-card1 h3,
+    .product .side-cards .product-card1 p,
+    .product .side-cards .product-card2 h3,
+    .product .side-cards .product-card2 p,
+    .product .product-card3 h3,
+    .product .product-card3 p {
+        width: 100%; /* Full width for smaller screens */
+        margin: 12px 0px 0px 0px; /* Adjusted margin for smaller screens */
+    }
+
+    .youtube-video {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Auto height for smaller screens */
+        max-width: 700px; /* Limit width for smaller screens */
+        margin: 32px auto; /* Center the video */
+    }
 }
 
 /* Blogs on home page */
@@ -3088,6 +3226,7 @@ footer .footer-logo-section .text{
     animation-delay: 1s;
 }
 
+
 .company-heading-div{
     animation: fadeDown 3000ms forwards;
     opacity: 0;
@@ -3135,7 +3274,7 @@ footer .footer-logo-section .text{
 
 .hero-container .dashboard-img{
     animation: fadeUp 3000ms forwards;
-    opacity: 0;
+    opacity: 2;
 }
 
 /* .testimonial-cards{
@@ -3250,3 +3389,4 @@ footer{
         margin-left: 200px;
     }
 }
+
