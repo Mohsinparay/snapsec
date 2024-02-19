@@ -2415,10 +2415,12 @@ footer .footer-logo-section .text{
     footer .footer {
         flex-direction: column; /* Adjusted flex direction for smaller screens */
         padding: 50px 20px; /* Adjusted padding for smaller screens */
+	    
     }
 
     footer .footer-logo-section .name-logo {
         margin-bottom: 20px; /* Adjusted margin for smaller screens */
+	     display: block;
     }
    
 
