@@ -1950,6 +1950,39 @@ body{
     margin: 14px 19px;
 }
 
+.product-new-outer {
+    display: flex;
+    margin: 32px auto;
+    gap: 34px;
+    width: 95%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 0px 0px 10px 0px;
+    position: relative; /* Position relative for pseudo-element */
+}
+
+/* Scroll line */
+.product-new-outer::after {
+    height: 2px; /* Reduce height of scroll line for smaller screens */
+    bottom: -5px; /* Adjust the margin for smaller screens */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 700px) {
+    .product-new-outer::after {
+
+        
+        content: '';
+        position: absolute;
+        bottom: -10px; /* Adjust the margin here */
+        left: 0;
+        width:500%;
+        height: 33px; /* Height of the scroll line */
+        background-color: #0084FF; /* Color of the scroll line */
+        z-index: 1; /* Ensure it appears above the scrollbar */
+    }
+}
+
+
 .schudule-card{
     position: relative;
     margin: 56px auto;
