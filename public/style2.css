@@ -2425,6 +2425,7 @@ footer .footer-logo-section .text{
     footer .footer-logo-section .name-logo .image {
         width:105px; /* Adjusted width for smaller screens */
         height: 105px; /* Adjusted height for smaller screens */
+	 margin: 0% 40% 0% 35%;
     }
 
     footer .footer-logo-section .text {
