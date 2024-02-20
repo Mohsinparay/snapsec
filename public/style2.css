@@ -2132,6 +2132,7 @@ body{
     .schudule-card .schudule-text {
         width: 90%; /* Adjusted width for smaller screens */
         padding: 30px; /* Adjusted padding for smaller screens */
+	   font-size: 17px;
     }
 
     .schudule-card .bg-img {
