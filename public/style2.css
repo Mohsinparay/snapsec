@@ -3453,3 +3453,20 @@ footer{
 }
 
 
+@media (max-width: 700px) {
+    .eclips1,
+    .eclips2,
+    .eclips3,
+    .eclips4,
+    .eclips5,
+    .eclips6,
+    .eclips7,
+    .eclips8,
+    .eclips9,
+    .eclips10,
+    .background1 {
+      display: none;
+    }
+  }
+  
+
