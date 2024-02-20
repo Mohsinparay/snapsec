@@ -66,7 +66,7 @@
                   </li>
           
                   <li>
-                    <a href="#services" class="" id="">Service</a>
+                    <a href="#services" onclick="services()" class="" id="">Service</a>
                   </li>
           
                   <li>
@@ -2565,6 +2565,21 @@
     });
 
 
+
+
+    function services() {
+  let ele = document.getElementById("services");
+  let heading = document.getElementById("services1");
+  heading.style.display = "";
+  setTimeout(function() {
+    heading.style.display = "none";
+  }, 60000);
+
+  ele.style.display = "";
+  setTimeout(function() {
+    ele.style.display = "none";
+  }, 60000);
+    }
 
 
 
