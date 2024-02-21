@@ -13,7 +13,8 @@
     href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Josefin+Sans:wght@100;400;500&family=Plus+Jakarta+Sans:wght@500;700&display=swap"
     rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
   <title>Snapsec - Your Security, Centralized</title>
   <link rel="stylesheet" type="text/css" href="public/style2.css">
   <script src="https://kit.fontawesome.com/ac1e998d8e.js" crossorigin="anonymous"></script>
@@ -41,54 +42,72 @@
 
 
 <body class="lazy-load-animations">
-  <div class="desktop" style="margin-top: -20px;">
-    <nav class="navbar navbar-expand-lg desktop-nav ">
-      <div class="container-fluid">
-          <div class="logo" >
-              <a href="" class="image">
-                <img src="public/images/logo.svg" alt="" />
-              </a>
-              <p class="logo-text" style="margin-top: 20px; font-size: 26px;">Snapsec</p>
-            </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent"  >
-          <div   class="gap" style=" visibility: hidden;">text</div>
-          <div class="links" ><ul class="main-manu" >
 
-                  <li>
-                    <a href="index.html" class="active">Home</a>
-                  </li>
-          
-                  <li>
-                    <a href="#" class="productLink" id="product-hover">Product</a>
-                  </li>
-          
-                  <li>
-                    <a href="#services" onclick="services()" class="" id="">Service</a>
-                  </li>
-          
-                  <li>
-                    <a href="https://snapsec.co/blog" target="_blank">Blog</a>
-                  </li>
-          
-                  <li>
-                    <a href="contact-us.html">Contact Us</a>
-                  </li>
-                  <!-- <div   class="gap" style=" visibility: hidden;">text</div> -->
-                 <div class="container">    <a href="contact-us.html"><button class="btn">
-                  Get Started
-                </button></a></div>
-                 
-          </ul>
-
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <a href="" class="image">
+          <img src="public/images/logo.svg" alt="" />
+        </a>
+        <p class="logo-text">Snapsec</p>
       </div>
-        
-  </div>
-</div>
-</nav>
-    
+        <div class="nav">
+            <ul>
+              <li>
+                <a href="index.html" class="active">Home</a>
+              </li>
+      
+              <li>
+                <a href="#" class="" >Product</a>
+              </li>
+      
+              <li>
+                <a href="#" class="" onclick="services()">Service</a>
+              </li>
+      
+              <li>
+                <a href="https://snapsec.co/blog" target="_blank">Blog</a>
+              </li>
+      
+              <li>
+                <a href="contact-us.html">Contact Us</a>
+              </li>
+              <!-- <div   class="gap" style=" visibility: hidden;">text</div> -->
+             
+             
+      </ul>
+            </ul>
+            <div class="menu"><i onclick="display()" class="fa-solid fa-bars"></i></div>
+        </div>
+        <a href="#" class="highlight navbtn">Get Started</a>
+        <div class="dropdown-menu" id="dropdown-menu ">
+            <ul>
+              <li>
+                <a href="index.html" class="active">Home</a>
+              </li>
+      
+              <li>
+                <a href="#" class="productLink" id="product-hover">Product</a>
+              </li>
+      
+              <li>
+                <a href="#" class="serviceLink" id="service-hover">Service</a>
+              </li>
+      
+              <li>
+                <a href="https://snapsec.co/blog" target="_blank">Blog</a>
+              </li>
+      
+              <li>
+                <a href="contact-us.html">Contact Us</a>
+              </li>
+                <li><a href="#" class="highlight navbtn">Get Started</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+  <div class="desktop" style="margin-top: -20px;">
+  
     <div class="service-hover" id="Service-Tab" style="display: none;  margin-top: -60px;">
         <nav class="service-hover-nav">
             <div class="logo">
@@ -604,7 +623,7 @@
   
           <h1 class="main-text text-center" id="main">
   
-            All your cybersecurity needs<span class="inner-text" id="main"><br>centralized</span> in one place<br>
+            All your cybersecurity needs<span class="inner-text"  id="main"><br>centralized</span> in one place<br>
           </h1>
           <p class="small-text" style=" color: rgba(255, 255, 255, 0.70);">
             <!-- Redefining Security in a Centralized Product Ecosystem -->
@@ -626,7 +645,7 @@
             <span>Talk To Expert</span>
           </button></a>
       </div>
-      <div style="padding: 10px;">
+      <div style="padding: 10px;" >
         <!-- <img class="dashboard-img"  src="public/images/dashboard.svg"> -->
         <img src="public/images/dashboard.svg" height="600px" class="img-fluid dashboard-img" alt="...">
       </div>
@@ -638,7 +657,8 @@
 
   <!-- backgroundpublic/images -->
 
-<div class="eclips1">
+<!-- 
+  <div class="eclips1">
 
   </div>
   <div class="eclips2">
@@ -680,7 +700,7 @@
 
   <div class="background1">
 
-  </div> 
+  </div>  -->
 
 
 
@@ -968,9 +988,9 @@
 
   <div class="blog-upperText">
     <h1 class="blog-heading" id="main">
-      One platform, multiple products,<br><span class="inner-text">Multiple Solutions!</span>
+      One platform, multiple products,<br><span class="inner-text"  id="main">Multiple Solutions!</span>
     </h1>
-    <p class="blog-text" >
+    <p class="blog-text"  id="">
       An enterprise SaaS designed for powerful and flexible cybersecurity operations.
     </p>
   </div>
@@ -1127,121 +1147,15 @@
 
     </div> -->
     </div>
-
-    <!-- <div class="eclips2"> -->
-<!-- 
-    </div>
-
-    <div class="eclips3">
-
-    </div> -->
-
-    <!-- <div class="eclips4">
-  
-      </div> -->
+<!-- working here -->
 
 
 
 
-  <!-- </div> -->
 
 
 
-  <!-- 
-    <div class="services">
 
-      <h1 class="sevices-heading">
-        <span class="inner-text">Our</span> Services 
-      </h1>
-      <p class="services-smallText">
-        We offer a comprehensive suite of services to help you protect your digital assets and reduce your security
-        risks.
-      </p>
-
-      <div class="service-card">
-
-        <div class="image">
-          <img src="public/images/services/1.svg">
-        </div>
-
-        <div class="text">
-          <h3 class="card-heading">Vulnerability assesment and Penetration Testing</h3>
-
-          <p class="card-text">
-            VAPT services are for organisation who want to detect and fix security weaknesses in Web-Apps, networks, and
-            publicly facing systems, safeguarding organizations from financial and reputational harm.
-          </p>
-
-          <a href="contact-us.html" class="href-tag">
-            <div class="see-more-btn">
-            <p class="see-text">read more</p>
-            <img src="public/images/arrow.svg">
-           </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="service-card2">
-        <div class="text">
-          <h3 class="card-heading">Mobile Application Penetration Testing</h3>
-
-          <p class="card-text">
-            For sensitive mobile apps, this service safeguards customer data. Vulnerable Android or Web Apps pose equal
-            security risks for customer information. Ideal for organizations handling critical functionalities and data.
-          </p>
-
-          <a href="contact-us.html" class="href-tag">
-            <div class="see-more-btn">
-            <p class="see-text">read more</p>
-            <img src="public/images/arrow.svg">
-          </div></a>
-        </div>
-
-        <div class="image">
-          <img src="public/images/services/2.svg">
-        </div>
-      </div>
-
-      <div class="service-card">
-
-        <div class="image">
-          <img src="public/images/services/3.svg">
-        </div>
-
-        <div class="text">
-          <h3 class="card-heading">Infrastructure Penetration Testing</h3>
-
-          <p class="card-text">
-            Network growth enhances applications, services, devices, and storage, demanding extensive vulnerability
-            tracking for enterprises. Infrastructure testing ensures real-world security, monitor servers, devices,
-            domains, IPs, and services in staging and production systems.
-          </p>
-
-          <a href="contact-us.html" class="href-tag">
-            <div class="see-more-btn">
-            <p class="see-text">read more</p>
-            <img src="public/images/arrow.svg">
-          </div></a>
-        </div>
-      </div>
-      <a href="services.html">
-        <button class="btn">
-          <span>View All Services</span>
-        </button>
-      </a>
-    </div> -->
-
-  <!-- <div class="line">
-      <svg xmlns="http://www.w3.org/2000/svg" width="814" height="2" viewBox="0 0 814 2" fill="none">
-        <path
-          d="M1 0.5C0.723858 0.5 0.5 0.723858 0.5 1C0.5 1.27614 0.723858 1.5 1 1.5L1 0.5ZM1 1.5L814 1.49993L814 0.499929L1 0.5L1 1.5Z"
-          fill="white" fill-opacity="0.55" />
-      </svg>
-    </div> -->
-
-
-  <!-- companies -->
-    
 
 
     <h1 id="services1"  class=" text-center" style="color: white; display: none;   color: #FFF;
@@ -1542,6 +1456,7 @@
             </div>
 
     </div>
+ 
   <br>
   <br>
   <br>
@@ -1550,10 +1465,10 @@
 
   <div class="company-heading-div">
     <h1 class="company-heading" id="main">
-      Trusted <br><span class="inner-text"  id="main">over 70+ Companies</span>
+      Trusted <br><span class="inner-text" id="main">over 70+ Companies</span>
     </h1>
 
-    <p class="company-text"  id="">
+    <p class="company-text" style="padding: 15px;">
       More than 100+ businesses have trusted Squareboat to grow using our design and technology expertise.
     </p>
   </div>
@@ -2140,9 +2055,9 @@
 
   <div class="testimonials">
     <h1 class="testimonials-heading" id="main">
-      What Our <span class="inner-text" id="main">Customers Say</span>
+      What Our <span class="inner-text" id="main" >Customers Say</span>
     </h1>
-    <p class="testimonials-text"  id="">
+    <p class="testimonials-text"   >
       We offer a comprehensive suite of services to help you protect your digital assets and reduce your security risks.
     </p>
   </div>
@@ -2283,7 +2198,6 @@
 
 
 
-
  
 
 
@@ -2297,9 +2211,9 @@
     <p class="schudule-text">
       Don't Wait for a Breach! Schedule a Free <span class="inner-text"> Cybersecurity </span> Consultation Today.
     </p>
-    <!-- <div class="eclips1">
+    <div class="eclips1">
 
-    </div> -->
+    </div>
 
 
 
@@ -2566,8 +2480,8 @@
 
 
 
-
     function services() {
+      alert(200)
   let ele = document.getElementById("services");
   let heading = document.getElementById("services1");
   heading.style.display = "";
@@ -2581,16 +2495,33 @@
   }, 60000);
     }
 
+    const toggleBtn = document.querySelector('.menu');
+const toggleBtnIcon = toggleBtn.querySelector('i');
+const dropDownMenu = document.querySelector('.dropdown-menu');
+
+toggleBtn.onclick = function () {
+  dropDownMenu.classList.toggle('open');
+  const isOpen = dropDownMenu.classList.contains('open');
+  toggleBtnIcon.classList.toggle('fa-bars', !isOpen);
+  toggleBtnIcon.classList.toggle('fa-xmark', isOpen);
+  
+};
 
 
 
+            
 
+// Get the toggle button element
 
-
-
+function display(){
+  var dropdownMenu = document.getElementById('dropdown-menu ');
+      // alert("fdbf")
+      dropdownMenu.style.display = 'block';
+      
+    
+    }
 
     
-
 
     </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
